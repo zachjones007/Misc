@@ -33,9 +33,10 @@ def main():
         pet = Pet({'name': name, 'type': animal_type, 'age': age})
         animals.append (animal_type)
 
-        print("pet name is", pet.get_name())
+        print("pet stats", pet.get_name())
+       
 
-        print (animals)
+        
         option = str(input('would you like to contiune? yes or quit '))
         for letter in option:
                 if letter in "n,N,q,Q":
