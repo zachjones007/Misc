@@ -26,14 +26,17 @@ def main():
             remainderc = float(remainderC - C)
             def profit():
                 fileda = (remaindera + 300)
-                filedb = (remaindera + 500)
-                filedc = (remaindera + 200)
+                filedb = (remainderb + 500)
+                filedc = (remainderc + 200)
                 #print(profita)#,profitb, profitc)
-                print(fileda)
+
+                print ("servings",int(fileda*20))
+                print ("servings",int(filedb*15))
+                print ("servings",int(filedc*10))
             profit()
+            
             
            
     remainder()
 
 main()
-
