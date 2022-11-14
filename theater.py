@@ -10,16 +10,13 @@ def main():
     A = 300
     B = 500 
     C = 200
-    
-
-
-
-
     #input number of seats sold for each class.
     remainderA = float(input('Enter total tickets sold for Class "A": '))
     remainderB= float(input('Enter total tickets sold for Class "B": '))
     remainderC = float(input('Enter total tickets sold for Class "C": '))
-    
+    priceA = 20
+    priceB = 15
+    priceC = 10 
     def remainder():
             remaindera = float(remainderA - A)
             remainderb =float(remainderB - B) 
@@ -29,14 +26,16 @@ def main():
                 filedb = (remainderb + 500)
                 filedc = (remainderc + 200)
                 #print(profita)#,profitb, profitc)
+            
+                a = int(fileda*priceA)
+                b = int(filedb*priceB)
+                c = int(filedc*priceC)
 
-                print ("servings",int(fileda*20))
-                print ("servings",int(filedb*15))
-                print ("servings",int(filedc*10))
+
+                print ("Section A profit :",a,"$","Section B profit :",b,"$","Section C profit :",c,"$")
+               
+                print("total profit:",int((a)+(b)+(b)),"$")
             profit()
-            
-            
-           
+                    
     remainder()
-
 main()
