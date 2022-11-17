@@ -1,44 +1,79 @@
+class Employee:
+    def __init__(self): #Constructor
+        self.__id = 0
+        self.__name = ""
+        self.__gender = ""
+        self.__city = ""
+        self.__salary = 0
+
+    @property
+    def id(self):
+        return self.__id
+
+    @id.setter
+    def id(self,value):
+        self.__id=value
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+    @property
+    def gender(self):
+        return self.__gender
+
+    @gender.setter
+    def gender(self, value):
+        self.__gender = value
+
+    @property
+    def city(self):
+        return self.__city
+
+    @city.setter
+    def city(self, value):
+        self.__city = value
+
+    @property
+    def salary(self):
+        return self.__salary
+
+    @salary.setter
+    def salary(self, value):
+        self.__salary = value
+
 def main():
-    animals = []
-    while True :
-        class Pet:
-        
-            def __init__(self, options):
-                self._name = options
-                self._animal_type = options
-                self._age = options
+    print("Enter Employee Data:")
+    i = int(input("Enter Id\t:"))
+    n = input("Enter Name\t:")
+    g = input("Enter Gender:")
+    c = input("Enter City\t:")
+    s = int(input("Enter Salary:"))
 
-            def set_name(self, new_name):
-                self._name = new_name
+    e=Employee()
+    e.id=i
+    e.name=n
+    e.gender=g
+    e.city=c
+    e.salary=s
+    id2 = e.id
+    name2 = e.name
+    gender2 = e.gender
+    city2 = e.city
+    salary2 = e.salary
 
-            def set_animal_type(self, new_type):
-                self._animal_type = new_type
 
-            def set_age(self, new_age):
-                self._age = new_age
+    print("\nDisplaying Employee Data:")
+    print("Id\t\t:", id2)
+    print("Name\t:", name2)
+    print("Gender\t:", gender2)
+    print("City\t:", city2)
+    print("Salary\t:", salary2)
 
-            def get_name(self):
-                return self._name
 
-            def get_animal_type(self):
-                return self._animal_type
-
-            def get_age(self):
-                return self._age
-
-        animal_type = input("input pet type")
-        name = input("input pet name")
-        age = input("pet age")
-
-        pet = Pet({'name': name, 'type': animal_type, 'age': age})
-        animals.append (animal_type)
-
-        print("pet stats", pet.get_name())
-       
-
-        
-        option = str(input('would you like to contiune? yes or quit '))
-        for letter in option:
-                if letter in "n,N,q,Q":
-                    quit("quittting")
-main()
+if __name__=="__main__":
+    main()
