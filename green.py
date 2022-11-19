@@ -1,56 +1,43 @@
 
 year1 = []
 year2 = []
-months = ["Jan","Feb"]#,"Mar","Apr","May","Jun","jul","aug","sep","Oct","Nov","Dec"]
+months = ["Jan","Feb","Mar","Apr","May","Jun","jul","aug","sep","Oct","Nov","Dec"]
 while True:
     for i in range( len(months)):
         print("Enter the number of green beans harvested in", months[i], "for year 1")
         year1.append(int(input()))
         print("Enter the number of green beans harvested in", months[i], "for year 2")
         year2.append(int(input()))
-    print(year1)    
-    print(year2)
+       
+  
+  
         
-        
-    savings = list()
-    for list1, list2 in zip(year1, year2):
-            print(savings + months)
-
-    print(*months, sep = "\n")
-    break
-
-#++++ 
-#++++
-#++++
-#++++
-#++++ 
+   
 
 
-sentence = "WHAT IS MINE IS YOURS AND WHAT IS YOURS IS MINE";
 
-sentence = sentence.lower();
+    sentence = "WHAT IS MINE IS YOURS AND WHAT IS YOURS IS MINE";
 
-sentence = sentence.split();
+    
 
-uniqueWord = [];
+    sentence = sentence.split();
 
-store = [];
+    uniqueWord = [];
 
-for i in sentence:
-    if i not in uniqueWord:
-        uniqueWord.append(i);
+    store = [];
 
-lengthOfUniqueWord = len(uniqueWord);
+    for i in sentence:
+        if i not in uniqueWord:
+            uniqueWord.append(i);
 
-print(sentence);
+    lengthOfUniqueWord = len(uniqueWord);
 
-print(uniqueWord);
 
-for i in range(lengthOfUniqueWord):
-    i = str(i+1);
-    store.append(i);
+    for i in range(lengthOfUniqueWord):
+        i = str(i);
+        store.append(i);
 
-print(store);
+    print(store);
 
-for positions in enumerate(uniqueWord, 1):
-     print(positions);
+    for positions in enumerate(uniqueWord, 1):
+        print(positions);
