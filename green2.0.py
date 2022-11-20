@@ -14,20 +14,9 @@ while True:
         savings = list()
         for list1, list2 in zip(year1, year2):
             savings.append(list1 - list2)
-    
-    sentence = "WHAT IS MINE IS YOURS AND WHAT IS YOURS IS MINE";
-    sentence = sentence.split();
-
-    
-
-    for i in sentence:
-            if i not in savings:
-                savings.append(i);
-
-    for positions in enumerate(savings, 1):
-        print(positions);
-
-    
+   
+    res = "\n".join("{} {}".format(x, y) for x, y in zip(savings, months))
+    print(res)
         
 
 
