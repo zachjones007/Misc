@@ -13,18 +13,18 @@ year2 = []
 months = ["Jan","Feb","Mar","Apr","May","Jun","jul","aug","sep","Oct","Nov","Dec"]
 
 while True:
-    for i in range( len(months)):
+    for i in range(len(months)):
         print("amount payed before going green : ", months[i], "for year 1")
-        year1.append(int(input()))
+        year1.append(float(input()))
         print("amount payed after going green : ", months[i], "for year 2")
-        year2.append(int(input()))
+        year2.append(float(input()))
        
 
         savings = list()
         for list1, list2 in zip(year1, year2):
             savings.append(list1 - list2)
    
-    res = "\n".join("{} {}".format(x, y) for x, y in zip(savings, months))
+    res = "\n".join("the savings for {} is {}$ ".format(x, y) for x, y in zip(months, savings))
     print("your savings for going green per month are: ")
     print(res)
         
