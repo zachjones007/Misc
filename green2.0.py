@@ -24,7 +24,7 @@ while True:
         for list1, list2 in zip(year1, year2):
             savings.append(list1 - list2)
    
-    res = "\n".join("the savings for {} is {}$ ".format(x, y) for x, y in zip(months, savings))
+    res = "\n".join("the savings for {} since going green is {}$ ".format(x, y) for x, y in zip(months, savings))
     print("your savings for going green per month are: ")
     print(res)
         
