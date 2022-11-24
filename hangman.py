@@ -13,7 +13,7 @@ if 4 <= len(cpu_choice):
 x = 0
 y = 0
 match = False 
-while x < 5 or y < number:
+while x < 5 and y < number:
 
     userinput = input('guess a letter: ')[0]
     
@@ -21,10 +21,12 @@ while x < 5 or y < number:
     for letter in cpu_choice[1][0]:
       if letter != userinput:
         x = x +1 
+        print("incorrect")
     for letter in cpu_choice[1][0]:
       if letter == userinput:
         match = True
         y = y +1 
+        print("correct")
 
       
     print(cpu_choice)
