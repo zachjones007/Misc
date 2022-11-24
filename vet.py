@@ -31,7 +31,7 @@ class Pet:
 p = Pet()
   
 # setting the age using setter
-p.set_age(int(input("Enter the age: ")))
+p.set_age(float(input("Enter the age: ")))
 p.set_name(input("Enter the name: "))
 p.set_type(input("Enter the type: "))
   
