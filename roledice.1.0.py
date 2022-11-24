@@ -22,7 +22,8 @@ while True:
                     quit("quittting")
 
     #no input 
-     V)
+    elif user_choice1 >= user_choice:
+        print({username1}," wins")
 
         
         option = input('would you like to quit? ')
