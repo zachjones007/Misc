@@ -1,7 +1,6 @@
-#creates an object of the class and prompts the user to enter the name, type, and age
-#of his or her pet. This data should be stored in the object. Use the object’s
-#accessor methods to retrieve the pet’s name, type, and age and display
-#this data on the screen. The output Should be similar to the picture below.
+#zach jones 
+#10/23/22
+#cis 129 
 
 class Pet:
     def __init__(self, age = 0,name= " ",type= " "):
