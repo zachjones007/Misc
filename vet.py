@@ -1,4 +1,4 @@
-global petlist 
+global list 
 
 class Pet:
     
